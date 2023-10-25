@@ -1,0 +1,66 @@
+<html>
+  <head>
+    <title>Mr. Pullen</title>
+    <style>
+      html,
+      body {
+        height: 100%;
+      }
+      
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-family: "Comic Sans MS", "Comic Sans", cursive;
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 0 32px;
+      }
+      
+      p {
+        margin: 8px 0;
+      }
+      
+      footer {
+        font-size: 1rem;
+        margin-top: 64px;
+        margin-bottom: 8px;
+      }
+      
+      img {
+        width: 50vmin;
+        animation: spin 3000ms linear infinite;
+      }
+      
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <img src="/face.png" alt="Mr. Pullen" />
+
+    <p>Want to make fun stuff on the computer?</p>
+    <p><strong>Join coding club!</strong> After school on Tuesdays in W106.</p>
+    <footer>(No thank you to my students for coming up with this, the worst professional website idea of all time.)</footer>
+
+    <script>
+      const r = Math.random() * 255;
+      const g = Math.random() * 255;
+      const b = Math.random() * 255;
+      
+      document.body.style.background = `rgb(${r}, ${g}, ${b})`;
+      if ((r + g + b) / 3 > 127) {
+        document.body.style.color = "black";
+      } else {
+        document.body.style.color = "white";
+      }
+    </script>
+  </body>
+</html>
