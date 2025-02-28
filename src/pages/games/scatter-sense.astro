@@ -1,0 +1,12 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import ScatterSense from "../../games/ScatterSense/index.svelte";
+---
+
+<Layout>
+  <a href="/">Home</a>
+  <h1>Scatter Sense</h1>
+  <div style="display: flex; justify-content: center;">
+    <ScatterSense client:load />
+  </div>
+</Layout>
