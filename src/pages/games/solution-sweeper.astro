@@ -1,0 +1,12 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import SolutionSweeperGame from "../../games/SolutionSweeper/index.svelte";
+---
+
+<Layout>
+  <a href="/">Home</a>
+  <h1>Solution Sweeper</h1>
+  <div style="display: flex; justify-content: center;">
+    <SolutionSweeperGame client:load />
+  </div>
+</Layout>
