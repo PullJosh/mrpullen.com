@@ -171,7 +171,7 @@
                   selectedPointIndices = [...selectedPointIndices, index];
                   if (point.isSolution) {
                     correct.play();
-                    addToTimer(5);
+                    addToTimer(3 * 0.9 ** points);
                     points += 1;
                   } else {
                     wrong.play();
